@@ -1,4 +1,38 @@
+/* Navbar */
+.HeadingStyle {
+  /* font-size: 25px; */
+  /* margin-left: 0px; */
+  align-items: baseline;
+}
+/* Mateo Rodriguez in NavBar */
+.TextStyle {
+  font-size: 16px;
+  font-weight: 16px;
+}
+
 .FooterStyle {
-  background-color: aqua;
-  
+  /* background-color: rgb(31, 32, 33); */
+}
+/* Footer Image */
+.GitHubLogo {
+  text-align: center;
+  /* padding-left: 1111px; */
+}
+/* Footer Image */
+.LinkedinLogo {
+  /* text-indent: 2px; */
+  text-align: center;
+}
+/* Footer Image */
+.IGLogo {
+  /* text-indent: 1px; */
+  text-align: center;
+}
+/* text in cards */
+.card-text {
+  color: rgb(139, 139, 139);
+}
+
+#CustomNav {
+  background-color: rgb(18, 18, 18) !important;
 }

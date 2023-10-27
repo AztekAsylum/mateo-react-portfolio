@@ -1,15 +1,28 @@
-export default function About() {
+import { Container, Row, Col, Card } from "react-bootstrap";
+
+function CustomCard() {
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
-    </div>
+    <Container>
+      <Row>
+        <Col md={6} className="mx-auto">
+          <Card className="mx-auto text-center my-2">
+            <Card.Img variant="top" src="/Assets/Images/Mateo.jpg" />
+            <Card.Body>
+              <Card.Title></Card.Title>
+              <Card.Text>
+                Mateo is a Dev with a graphic design background based in Denver,
+                CO. Creating layouts and graphics is his specialty.
+                Additionally, he utilizes his photo and video skills to create
+                unique content for promo and engagement.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   );
 }
+
+export default CustomCard;
+
+// style={{ width: "30rem" }}
