@@ -33,10 +33,15 @@
   color: rgb(139, 139, 139);
 }
 /* Button Card */
-.ProjectButton{
-width: 100%;
+.ProjectButton {
+  width: 100%;
 }
-
+.label {
+  width: 100px;
+}
 #CustomNav {
   background-color: rgb(18, 18, 18) !important;
+}
+#submitButton {
+  width: 125px;
 }
