@@ -6,7 +6,6 @@ export default function Portfolio() {
   return (
     <Container>
       <Row>
-        <h1>Portfolio Page</h1>
       </Row>
       <Row>
         {projectData.map((project) => {
