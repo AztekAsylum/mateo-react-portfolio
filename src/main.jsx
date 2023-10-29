@@ -13,6 +13,7 @@ import Resume from "./pages/Resume";
 import "./Custom.css";
 
 // Define the accessible routes, and which components respond to which URL
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,15 +25,15 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/Portfolio",
+        path: "Portfolio",
         element: <Portfolio />,
       },
       {
-        path: "/Contact",
+        path: "Contact",
         element: <Contact />,
       },
       {
-        path: "/Resume",
+        path: "Resume",
         element: <Resume />,
       },
     ],
