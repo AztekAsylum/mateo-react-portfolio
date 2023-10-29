@@ -6,8 +6,6 @@ export default function Portfolio() {
   return (
     <Container>
       <Row>
-      </Row>
-      <Row>
         {projectData.map((project) => {
           return (
             <Col md={4} className="mx-auto">

@@ -45,3 +45,16 @@
 #submitButton {
   width: 125px;
 }
+#formContainer{
+    min-height: 80vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#formWidth{
+    width: 90%;
+}
+#formContainer h1{
+    color: rgb(139, 139, 139);
+}
