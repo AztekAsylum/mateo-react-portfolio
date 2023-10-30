@@ -4,7 +4,7 @@ Developed under ![license badge](https://img.shields.io/badge/License-MIT-blue.s
 
 ## Description
 
-This is my personal react porttfolio website.
+This is my react portfolio webiste which you can visit by clicking [here.](https://mateo-rodriguez-react-portfolio.netlify.app/)
 
 ## Screenshot
 
