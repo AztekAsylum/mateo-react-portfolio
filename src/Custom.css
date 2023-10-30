@@ -36,15 +36,19 @@
 .ProjectButton {
   width: 100%;
 }
+/* contact form box width */
 .label {
   width: 100px;
 }
+/* navbar color */
 #CustomNav {
   background-color: rgb(18, 18, 18) !important;
 }
+/* submit button contact form */
 #submitButton {
   width: 125px;
 }
+/* contatiner styling for contact form */
 #formContainer{
     min-height: 80vh;
     display:flex;
@@ -52,9 +56,11 @@
     justify-content: center;
     align-items: center;
 }
+/* width of contact form */
 #formWidth{
     width: 90%;
 }
+/* grey text for contact form */
 #formContainer h1{
     color: rgb(139, 139, 139);
 }

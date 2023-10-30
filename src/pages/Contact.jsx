@@ -33,7 +33,7 @@ export default function Contact() {
 
   return (
     <div id="formContainer">
-      <h1>Contact Form</h1>
+      <h1>CONTACT FORM</h1>
       <div id="formWidth"className="d-flex justify-content-center flex-column align-items-center mt-4">
         <InputGroup className="mb-3">
           <InputGroup.Text className="label" id="inputGroup-sizing-default">
