@@ -8,7 +8,7 @@ This is my personal react porttfolio website.
 
 ## Screenshot
 
-![screenshot](./dist/Assets/MateoReactDeployed.png)
+![screenshot](./MateoReactDeployed.png)
 
 ## Table of Contents
 
