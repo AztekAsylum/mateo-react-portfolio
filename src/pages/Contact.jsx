@@ -1,6 +1,10 @@
 import { InputGroup, Form, Button } from "react-bootstrap";
+import emailjs from "@emailjs/browser"
+import React, { useRef } from 'react';
 
 export default function Contact() {
+  const form = useRef();
+
   function onBlurName(event) {
     var currentValue = event.target.value;
     if (currentValue == "") {
@@ -9,6 +13,7 @@ export default function Contact() {
       document.getElementById("notif-name").classList.add("d-none");
     }
   }
+
   function onBlurEmail(event) {
     var currentValue = event.target.value;
 
@@ -22,6 +27,7 @@ export default function Contact() {
       document.getElementById("notif-email").classList.add("d-none");
     }
   }
+
   function onBlurMessage(event) {
     var currentValue = event.target.value;
     if (currentValue == "") {
@@ -30,9 +36,22 @@ export default function Contact() {
       document.getElementById("notif-message").classList.add("d-none");
     }
   }
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
+    // service_id, templte_id and public key will get from Emailjs website when you create account and add template service and email service 
+    emailjs.sendForm('service_8q8rwfd', 'template_d5s6vw7', form.current, 
+    '6HPhF5iRicWDyOEDk')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    };
+    
 
   return (
-    <div id="formContainer">
+    <Form onSubmit={sendEmail} ref={form} id="formContainer">
       <h1>CONTACT FORM</h1>
       <div
         id="formWidth"
@@ -43,6 +62,7 @@ export default function Contact() {
             Name
           </InputGroup.Text>
           <Form.Control
+            name="from_name"
             onBlur={onBlurName}
             aria-label="Default"
             aria-describedby="inputGroup-sizing-default"
@@ -57,6 +77,7 @@ export default function Contact() {
             Email
           </InputGroup.Text>
           <Form.Control
+            name="reply_to"
             onBlur={onBlurEmail}
             aria-label="Default"
             aria-describedby="inputGroup-sizing-default"
@@ -69,6 +90,7 @@ export default function Contact() {
         <InputGroup className="mb-3">
           <InputGroup.Text className="label">Message</InputGroup.Text>
           <Form.Control
+            name="message"
             as="textarea"
             aria-label="With textarea"
             onBlur={onBlurMessage}
@@ -78,10 +100,10 @@ export default function Contact() {
           MESSAGE IS REQUIRED
         </p>
 
-        <Button className="mb-4" id="submitButton" variant="dark">
+        <Button className="mb-4" id="submitButton" variant="dark" type="submit">
           Submit
         </Button>
       </div>
-    </div>
+    </Form>
   );
 }
