@@ -21,7 +21,7 @@ This is my react portfolio website which you can visit by clicking [here.](https
 
 ## Installation
 
-Clone the repo, run `npm i`, run `npm run build`, run `npm run dev`.
+Clone the repo, run `npm i`, run `npm run dev`.
 
 ## Usage
 

@@ -1,6 +1,6 @@
 import { InputGroup, Form, Button } from "react-bootstrap";
-import emailjs from "@emailjs/browser"
-import React, { useRef } from 'react';
+import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
 
 export default function Contact() {
   const form = useRef();
@@ -36,19 +36,31 @@ export default function Contact() {
       document.getElementById("notif-message").classList.add("d-none");
     }
   }
-  
+
   const sendEmail = (e) => {
     e.preventDefault();
-    // service_id, templte_id and public key will get from Emailjs website when you create account and add template service and email service 
-    emailjs.sendForm('service_8q8rwfd', 'template_d5s6vw7', form.current, 
-    '6HPhF5iRicWDyOEDk')
-      .then((result) => {
+    // service_id, templte_id and public key will get from Emailjs website when you create account and add template service and email service
+    emailjs
+      .sendForm(
+        "service_8q8rwfd",
+        "template_d5s6vw7",
+        form.current,
+        "6HPhF5iRicWDyOEDk"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
+        }
+      )
+      .then(() => {
+        document.getElementById("name_input").value = "";
+        document.getElementById("email_input").value = "";
+        document.getElementById("message_input").value = "";
       });
-    };
-    
+  };
 
   return (
     <Form onSubmit={sendEmail} ref={form} id="formContainer">
@@ -62,6 +74,7 @@ export default function Contact() {
             Name
           </InputGroup.Text>
           <Form.Control
+            id="name_input"
             name="from_name"
             onBlur={onBlurName}
             aria-label="Default"
@@ -77,6 +90,7 @@ export default function Contact() {
             Email
           </InputGroup.Text>
           <Form.Control
+            id="email_input"
             name="reply_to"
             onBlur={onBlurEmail}
             aria-label="Default"
@@ -90,6 +104,7 @@ export default function Contact() {
         <InputGroup className="mb-3">
           <InputGroup.Text className="label">Message</InputGroup.Text>
           <Form.Control
+            id="message_input"
             name="message"
             as="textarea"
             aria-label="With textarea"
