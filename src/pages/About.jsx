@@ -11,9 +11,9 @@ function CustomCard() {
               <Card.Title></Card.Title>
               <Card.Text>
                 Mateo is a Dev with a graphic design background based in Denver,
-                CO. Creating layouts and graphics is his specialty.
-                Additionally, he utilizes his photo and video skills to create
-                unique content for promo and engagement.
+                CO. Being creative is his specialty. Additionally, he utilizes
+                his photo and video skills to create unique content for promo
+                and engagement.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -24,5 +24,3 @@ function CustomCard() {
 }
 
 export default CustomCard;
-
-// style={{ width: "30rem" }}

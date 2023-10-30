@@ -34,7 +34,10 @@ export default function Contact() {
   return (
     <div id="formContainer">
       <h1>CONTACT FORM</h1>
-      <div id="formWidth"className="d-flex justify-content-center flex-column align-items-center mt-4">
+      <div
+        id="formWidth"
+        className="d-flex justify-content-center flex-column align-items-center mt-4"
+      >
         <InputGroup className="mb-3">
           <InputGroup.Text className="label" id="inputGroup-sizing-default">
             Name
@@ -46,7 +49,7 @@ export default function Contact() {
           />
         </InputGroup>
         <p id="notif-name" className="text-danger align-self-start d-none">
-          Name is required
+          NAME IS REQUIRED
         </p>
 
         <InputGroup className="mb-3">
@@ -60,7 +63,7 @@ export default function Contact() {
           />
         </InputGroup>
         <p id="notif-email" className="text-danger align-self-start d-none">
-          Email is invalid
+          EMAIL IS INVALID
         </p>
 
         <InputGroup className="mb-3">
@@ -72,7 +75,7 @@ export default function Contact() {
           />
         </InputGroup>
         <p id="notif-message" className="text-danger align-self-start d-none">
-          Message is required
+          MESSAGE IS REQUIRED
         </p>
 
         <Button className="mb-4" id="submitButton" variant="dark">
