@@ -1,13 +1,33 @@
+body {
+  background-color: rgb(18, 18, 18) !important;
+}
+/* card-body color */
+.card {
+  background-color: rgb(18, 18, 18) !important;
+}
 /* Navbar */
 .HeadingStyle {
   /* font-size: 25px; */
   /* margin-left: 0px; */
   align-items: baseline;
 }
+.LinkStyle {
+  color: whitesmoke;
+}
+.LinkStyle:hover {
+  color: grey;
+}
+/* Mateo Rodriguez in NavBar */
+.TextStyle:hover {
+  font-size: 16px;
+  font-weight: 16px;
+  color: whitesmoke;
+}
 /* Mateo Rodriguez in NavBar */
 .TextStyle {
   font-size: 16px;
   font-weight: 16px;
+  color: grey;
 }
 
 .FooterStyle {
@@ -32,6 +52,10 @@
 .card-text {
   color: rgb(139, 139, 139);
 }
+/* card title color */
+.card-title {
+  color: whitesmoke;
+}
 /* Button Card */
 .ProjectButton {
   width: 100%;
@@ -39,6 +63,20 @@
 /* contact form box width */
 .label {
   width: 100px;
+  background-color: rgb(33, 37, 41);
+  color: whitesmoke;
+}
+.form-control {
+  background-color: rgb(33, 37, 41);
+  color: whitesmoke;
+}
+.form-control:focus {
+  background-color: rgb(33, 37, 41);
+  color: whitesmoke;
+}
+.CustomShadow {
+  box-shadow: 1px 1px 2px black, 0 0 25px rgb(31, 32, 33),
+    0 0 5px rgb(83, 84, 84);
 }
 /* navbar color */
 #CustomNav {
@@ -49,18 +87,18 @@
   width: 125px;
 }
 /* contatiner styling for contact form */
-#formContainer{
-    min-height: 80vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#formContainer {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* width of contact form */
-#formWidth{
-    width: 90%;
+#formWidth {
+  width: 90%;
 }
 /* grey text for contact form */
-#formContainer h1{
-    color: rgb(139, 139, 139);
+#formContainer h1 {
+  color: rgb(139, 139, 139);
 }

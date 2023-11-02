@@ -4,7 +4,7 @@ function ProjectCard(props) {
   const { _id, imageUrl, title, description, deployedUrl, repoUrl } =
     props.project;
   return (
-    <Card key={_id} className="my-3">
+    <Card key={_id} className="my-3 CustomShadow">
       <Card.Img variant="top" src={imageUrl} />
       <Card.Body>
         <Card.Title className="text-center">{title}</Card.Title>

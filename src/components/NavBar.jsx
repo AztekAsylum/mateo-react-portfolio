@@ -12,10 +12,10 @@ function CustomNav() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="/">About Me</Nav.Link>
-            <Nav.Link href="/Portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="/Contact">Contact</Nav.Link>
-            <Nav.Link href="/Resume">Resume</Nav.Link>
+            <Nav.Link className="LinkStyle" href="/">About Me</Nav.Link>
+            <Nav.Link className="LinkStyle" href="/Portfolio">Portfolio</Nav.Link>
+            <Nav.Link className="LinkStyle" href="/Contact">Contact</Nav.Link>
+            <Nav.Link className="LinkStyle" href="/Resume">Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
