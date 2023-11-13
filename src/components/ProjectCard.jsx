@@ -19,11 +19,10 @@ function ProjectCard(props) {
       <Card.Body className="ProjectCardBody">
         <Card.Title className="text-center">{title}</Card.Title>
         <Card.Text className="text-center">{description}</Card.Text>
-        <Container></Container>
       </Card.Body>
       <Card.Footer>
         <Container>
-          <Row>
+          <Row className="pb-3">
             <Col className="justify-content-center">
               <Button
                 className="mx-auto ProjectButton"
