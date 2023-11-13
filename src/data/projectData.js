@@ -19,21 +19,21 @@ export const projectData = [
   },
   {
     _id: 3,
+    title: "HACK THE PLANET",
+    description:
+      "this is an e-commerce website for tech enthusiasts with latest and greatest offerings from the tech industry with full checkout functionality through stripe. ",
+    imageUrl: "/Assets/Images/HackThePlanet.png",
+    deployedUrl: "https://devshacktheplanet-44c29a23ae44.herokuapp.com/",
+    repoUrl: "https://github.com/AlexPurfield/hack_the_planet",
+  },
+  {
+    _id: 4,
     title: "PORTFOLIO",
     description:
       "website portfolio showcaseing my work that is built with using html and css",
     imageUrl: "/Assets/Images/PortfolioHTML.png",
     deployedUrl: "https://aztekasylum.github.io/portfolio/",
     repoUrl: "https://github.com/AztekAsylum/portfolio",
-  },
-  {
-    _id: 4,
-    title: "WEATHER APP",
-    description:
-      " a weather application for a city of the users choice for current and five day forecasts",
-    imageUrl: "/Assets/Images/WeatherApp.png",
-    deployedUrl: "https://aztekasylum.github.io/weather-dashboard/",
-    repoUrl: "https://github.com/AztekAsylum/weather-dashboard",
   },
   {
     _id: 5,

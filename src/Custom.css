@@ -60,6 +60,18 @@ body {
 .ProjectButton {
   width: 100%;
 }
+.ProjectCard {
+  height: 100%;
+}
+.ProjectCardBody {
+  height: 100%;
+}
+.ProjectCard {
+  height: 100%;
+}
+.ProjectImage {
+  object-fit: contain;
+}
 /* contact form box width */
 .label {
   width: 100px;

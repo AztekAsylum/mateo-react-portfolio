@@ -1,14 +1,27 @@
-import { Container, Row, Col, Button, Card } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  Card,
+  Ratio,
+  Image,
+} from "react-bootstrap";
 
 function ProjectCard(props) {
   const { _id, imageUrl, title, description, deployedUrl, repoUrl } =
     props.project;
   return (
-    <Card key={_id} className="my-3 CustomShadow">
-      <Card.Img variant="top" src={imageUrl} />
-      <Card.Body>
+    <Card key={_id} className="mt-3 CustomShadow ProjectCard">
+      <Ratio aspectRatio="16x9">
+        <Image className="ProjectImage" src={imageUrl} />
+      </Ratio>
+      <Card.Body className="ProjectCardBody">
         <Card.Title className="text-center">{title}</Card.Title>
         <Card.Text className="text-center">{description}</Card.Text>
+        <Container></Container>
+      </Card.Body>
+      <Card.Footer>
         <Container>
           <Row>
             <Col className="justify-content-center">
@@ -33,7 +46,7 @@ function ProjectCard(props) {
             </Col>
           </Row>
         </Container>
-      </Card.Body>
+      </Card.Footer>
     </Card>
   );
 }
