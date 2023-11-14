@@ -1,6 +1,15 @@
 export const projectData = [
   {
     _id: 1,
+    title: "HACK THE PLANET",
+    description:
+      "this is an e-commerce website for tech enthusiasts with latest and greatest offerings from the tech industry with full checkout functionality through stripe ",
+    imageUrl: "/Assets/Images/HackThePlanet.png",
+    deployedUrl: "https://devshacktheplanet-44c29a23ae44.herokuapp.com/",
+    repoUrl: "https://github.com/AlexPurfield/hack_the_planet",
+  },
+  {
+    _id: 2,
     title: "DEV ROW RECORDS",
     description:
       " online music platform, where you can discover and support talented artists",
@@ -9,22 +18,13 @@ export const projectData = [
     repoUrl: "https://github.com/PRich57/dev-row-records",
   },
   {
-    _id: 2,
+    _id: 3,
     title: "GAME SEEKERS",
     description:
       "video game recommendation web application tailored to your preferences",
     imageUrl: "/Assets/Images/GameSeekers.png",
     deployedUrl: "https://ljkahn.github.io/videoGameProj/",
     repoUrl: "https://github.com/ljkahn/videoGameProj",
-  },
-  {
-    _id: 3,
-    title: "HACK THE PLANET",
-    description:
-      "this is an e-commerce website for tech enthusiasts with latest and greatest offerings from the tech industry with full checkout functionality through stripe ",
-    imageUrl: "/Assets/Images/HackThePlanet.png",
-    deployedUrl: "https://devshacktheplanet-44c29a23ae44.herokuapp.com/",
-    repoUrl: "https://github.com/AlexPurfield/hack_the_planet",
   },
   {
     _id: 4,
