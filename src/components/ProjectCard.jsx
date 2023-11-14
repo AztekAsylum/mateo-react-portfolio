@@ -13,8 +13,8 @@ function ProjectCard(props) {
     props.project;
   return (
     <Card key={_id} className="mt-3 CustomShadow ProjectCard">
-      <Ratio aspectRatio="16x9">
-        <Image className="ProjectImage" src={imageUrl} />
+      <Ratio aspectRatio={913 / 1462}>
+        <Image className="ProjectImage rounded" src={imageUrl} />
       </Ratio>
       <Card.Body className="ProjectCardBody">
         <Card.Title className="text-center">{title}</Card.Title>

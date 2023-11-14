@@ -21,7 +21,7 @@ export const projectData = [
     _id: 3,
     title: "HACK THE PLANET",
     description:
-      "this is an e-commerce website for tech enthusiasts with latest and greatest offerings from the tech industry with full checkout functionality through stripe. ",
+      "this is an e-commerce website for tech enthusiasts with latest and greatest offerings from the tech industry with full checkout functionality through stripe ",
     imageUrl: "/Assets/Images/HackThePlanet.png",
     deployedUrl: "https://devshacktheplanet-44c29a23ae44.herokuapp.com/",
     repoUrl: "https://github.com/AlexPurfield/hack_the_planet",
