@@ -40,7 +40,7 @@ function ProjectCard(props) {
                 target="_blank"
                 variant="dark"
               >
-                Github Repo
+                GitHub Repo
               </Button>
             </Col>
           </Row>
