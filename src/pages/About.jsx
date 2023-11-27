@@ -28,11 +28,7 @@ function CustomCard() {
       <Row>
         <Col md={11} className="mx-auto text-center AboutMeText">
           <p>
-            Mateo is a Full Stack Developer with a background in graphic design
-            based in Denver, CO. Clean dark theme front-end design is his
-            specialty. Additionally, he utilizes his experience in graphic
-            design, photography, and video skills to create unique content for
-            promo and engagement.
+          I specialize in sleek front-end design, merging my creative talents from graphic design into my role as a Front-End Developer. My experience spans graphic design, photography, and videography, allowing me to craft distinctive promotional content. I thrive in adapting creatively, working diligently, and valuing collaborative projects. Proficient in React.js, JavaScript, Node.js, SQL, CSS3, Espress.js, HTML5, MongoDB, and beyond! Excited about the opportunity to work with you soon!
           </p>
         </Col>
       </Row>
