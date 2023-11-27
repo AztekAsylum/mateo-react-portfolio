@@ -65,6 +65,7 @@ export default function Contact() {
   return (
     <Form onSubmit={sendEmail} ref={form} id="formContainer">
       <h1>CONTACT ME</h1>
+      <h3>@ mateo.rodriguez85@gmail.com</h3>
       <div
         id="formWidth"
         className="d-flex justify-content-center flex-column align-items-center mt-4"
